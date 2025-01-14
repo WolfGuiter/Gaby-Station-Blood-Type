@@ -814,7 +814,23 @@ public sealed partial class SupermatterSystem
                 _ => sm.PortInactive
             };
 
+<<<<<<< HEAD
             _link.InvokePort(uid, port);
+=======
+            ProtoId<SpeechSoundsPrototype>? speechSound = sm.StatusCurrentSound;
+
+            if (currentStatus == SupermatterStatusType.Warning)
+                speech.AudioParams = AudioParams.Default.AddVolume(7.5f);
+            else
+                speech.AudioParams = AudioParams.Default.AddVolume(10f);
+
+            if (currentStatus == SupermatterStatusType.Delaminating)
+                speech.SoundCooldownTime = 5.0f; // to prevent repeat sounds during the 5.. 4.. 3.. 2.. 1.. countdown
+            else
+                speech.SoundCooldownTime = 0.0f;
+
+            speech.SpeechSounds = speechSound;
+>>>>>>> 9e0fea50e1a (attributions and file adjustments)
         }
 
         sm.Status = currentStatus;
