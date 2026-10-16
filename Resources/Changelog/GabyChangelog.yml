@@ -4482,3 +4482,51 @@ Entries:
       message: Mason agora explode todo round!
   id: 533
   time: '2026-10-15T20:01:52.0000000+00:00'
+- author: TheRealHeartbeat
+  changes:
+    - type: Add
+      message: >-
+        Armas corpo-a-corpo, armas balísticas excedentes, armas de gauss, e
+        phasers nos mapas. Lasersec agora é real.
+    - type: Remove
+      message: Lecters, Kammerers, Drozds, MK-58s nos mapas.
+  id: 534
+  time: '2026-10-16T17:54:39.0000000+00:00'
+- author: Struater
+  changes:
+    - type: Add
+      message: Adicionada cirurgia de cauda e asa.
+    - type: Tweak
+      message: Abductor sofreu vários ajustes em seu loop de gameplay.
+  id: 535
+  time: '2026-10-16T18:14:19.0000000+00:00'
+- author: Crenissis
+  changes:
+    - type: Tweak
+      message: Apenas Pessoas Plasma conseguem usar trajes herméticos.
+    - type: Tweak
+      message: Ajuste de stats e funcionalidade de algumas peças herméticas.
+    - type: Fix
+      message: >-
+        Pessoas Plasma agora conseguem usar armaduras de herege e do culto
+        cósmico sem pegar fogo.
+    - type: Fix
+      message: Pessoas Plasmas não ficam mais doente (Eu espero).
+    - type: Fix
+      message: Arruma avatares do bitrunner para Pessoas Plasma.
+    - type: Fix
+      message: Arruma algumas interações com o Blob Pod e o capacete hermético.
+  id: 536
+  time: '2026-10-16T18:22:42.0000000+00:00'
+- author: Struater
+  changes:
+    - type: Tweak
+      message: >-
+        Culto Cósmico recebeu uma atualização mediana. Vejam o livro guia para
+        mais detalhes.
+    - type: Tweak
+      message: >-
+        O culto cósmico foi traduzido para português, incluindo as entradas do
+        livro guia.
+  id: 537
+  time: '2026-10-16T19:56:07.0000000+00:00'
