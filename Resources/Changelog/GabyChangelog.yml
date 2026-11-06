@@ -4894,3 +4894,47 @@ Entries:
       message: Labor Shuttle agora funciona de fato.
   id: 581
   time: '2026-11-03T19:44:45.0000000+00:00'
+- author: cha
+  changes:
+    - type: Add
+      message: Adiciona a arte de lobby "Pode ser qualquer um"
+  id: 582
+  time: '2026-11-04T06:04:17.0000000+00:00'
+- author: CRISO
+  changes:
+    - type: Fix
+      message: Algumas músicas e vozes agora não vão mais te deixar surdo.
+  id: 583
+  time: '2026-11-04T06:07:22.0000000+00:00'
+- author: Struater
+  changes:
+    - type: Fix
+      message: Corrigido a progressão do culto cosmico
+    - type: Fix
+      message: Erros de sprites do Culto Cosmico foram arrumados
+  id: 584
+  time: '2026-11-04T06:42:32.0000000+00:00'
+- author: cha
+  changes:
+    - type: Add
+      message: Adiciona a arte de lobby "A NT se importa com sua saúde"
+  id: 585
+  time: '2026-11-04T19:27:53.0000000+00:00'
+- author: cristalyssd
+  changes:
+    - type: Tweak
+      message: 'Agora RPD recebe dobro de carga quando recarregado. '
+  id: 586
+  time: '2026-11-04T21:16:24.0000000+00:00'
+- author: Wolfguiter
+  changes:
+    - type: Fix
+      message: Corrigido laser de emitters passando pela SuperMatter.
+  id: 587
+  time: '2026-11-05T01:40:54.0000000+00:00'
+- author: Struater
+  changes:
+    - type: Add
+      message: Estatica de rádio ao falar em um.
+  id: 588
+  time: '2026-11-05T21:05:05.0000000+00:00'
