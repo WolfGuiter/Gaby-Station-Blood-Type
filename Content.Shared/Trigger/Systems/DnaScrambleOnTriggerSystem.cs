@@ -42,13 +42,13 @@ public sealed class DnaScrambleOnTriggerSystem : XOnTriggerSystem<DnaScrambleOnT
         _identity.QueueIdentityUpdate(target); // manually queue identity update since we don't raise the event
 
         // Can't use PopupClient or PopupPredicted because the trigger might be unpredicted.
-<<<<<<< HEAD
-        _popup.PopupEntity(Loc.GetString("scramble-on-trigger-popup"), target.Value, target.Value);
-=======
         _popup.PopupEntity(Loc.GetString("scramble-on-trigger-popup"), target, target);
 
         var ev = new DnaScrambledEvent(target);
         RaiseLocalEvent(target, ref ev, true);
->>>>>>> c01ec294d01 (Reduce Triggers Boilerplate. (#41086))
     }
 }
+
+
+[ByRefEvent]
+public record struct DnaScrambledEvent(EntityUid Target);
