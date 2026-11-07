@@ -3,7 +3,7 @@ using System.Numerics;
 using System.Text;
 using Content.Server.Chat.Systems;
 using Content.Server.Singularity.Components;
-using Content.Shared._EinsteinEngines.CCVar;
+using Content.Shared.CCVar;
 using Content.Shared._EinsteinEngines.Supermatter.Components;
 using Content.Shared.Atmos;
 using Content.Shared.Audio;
@@ -27,7 +27,6 @@ using Robust.Shared.Physics.Components;
 using Robust.Shared.Player;
 using Robust.Shared.Random;
 using Robust.Shared.Spawners;
-using Vector4 = Robust.Shared.Maths.Vector4;
 
 namespace Content.Server._EinsteinEngines.Supermatter.Systems;
 

@@ -12,7 +12,7 @@ using Content.Server.Radio.EntitySystems;
 using Content.Server.Singularity.Components;
 using Content.Server.Singularity.EntitySystems;
 using Content.Server.Traits.Assorted;
-using Content.Shared._EinsteinEngines.CCVar;
+using Content.Shared.CCVar;
 using Content.Shared._EinsteinEngines.Supermatter.Components;
 using Content.Shared.Atmos;
 using Content.Shared.Audio;
