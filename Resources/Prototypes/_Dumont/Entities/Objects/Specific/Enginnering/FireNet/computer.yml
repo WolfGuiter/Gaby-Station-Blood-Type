@@ -1,0 +1,51 @@
+- type: entity
+  name: FireNet Network Console
+  description: A console capable of configuring and monitoring the Station's FireNet Servers.
+  parent: BaseComputerAiAccess
+  id: ComputerFireNet
+  components:
+  - type: DeviceNetwork
+    deviceNetID: Wired
+    receiveFrequencyId: FireNet
+    transmitFrequencyId: FireNet
+  - type: WiredNetworkConnection
+  - type: DeviceNetworkRequiresPower
+  - type: Sprite
+    sprite: _Dumont/Objects/Specific/Enginnering/FireNet/firenet_console.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: firenet_console
+    - map: ["computerLayerKeys"]
+      state: firenet_console_keys
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
+  - type: GenericVisualizer
+    visuals:
+      enum.ComputerVisuals.Powered:
+        computerLayerScreen:
+          True: { visible: true, shader: unshaded }
+          False: { visible: false }
+        computerLayerKeys:
+          True: { visible: true, shader: unshaded }
+          False: { visible: true, shader: shaded }
+      enum.WiresVisuals.MaintenancePanelState:
+        enum.WiresVisualLayers.MaintenancePanel:
+          True: { visible: false }
+          False: { visible: true }
+  - type: UserInterface
+    interfaces:
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+  - type: Computer
+    board: FireNetConsoleCircuitboard
+  - type: AccessReader
+    access: [[ "NetworkTech"], ["ChiefEngineer"]]
+  - type: TogglePower
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#C7E57A"

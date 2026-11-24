@@ -1,0 +1,23 @@
+
+##  name: FireNet Server
+##  description: A configurable server connected to the Station's FireNet network.
+##  parent: [ BaseMachinePowered, ConstructibleMachine ]
+##  id: FireNetServer
+##  components:
+##  - type: NetworkedDevice
+##   deviceNetID: Wired
+##    receiveFrequencyId: FireNet
+##    transmitFrequencyId: FireNet
+## - type: WiredNetworkConnection
+##  - type: DeviceNetworkRequiresPower
+##  - type: ApcPowerReceiver
+##    powerLoad: 220
+##  - type: Machine
+##    board: FireNetServerCircuitboard
+##  - type: ContainerContainer
+##   containers:
+##      machine_board: !type:Container
+##      machine_parts: !type:Container
+##  - type: Sprite
+##    sprite: _Dumont/Objects/Specific/Enginnering/FireNet/firenet_server.rsi
+##    state: powered

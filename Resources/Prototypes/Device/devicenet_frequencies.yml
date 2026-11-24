@@ -116,7 +116,7 @@
   id: Turret
   name: device-frequency-prototype-name-turret
   frequency: 2152
-  
+
 # AI turret controllers send data to their turrets on this frequency
 - type: deviceFrequency
   id: TurretControlAI
@@ -134,6 +134,12 @@
   id: SmartLight #used by powered lights.
   name: device-frequency-prototype-name-lights
   frequency: 1173
+
+# FireNet Server, Modules and Player made PCB's communicate on this frequency.
+- type: deviceFrequency
+  id: FireNet
+  name: device-frequency-prototype-name-firenet
+  frequency: 1542
 
 - type: deviceFrequency
   id: MailingUnit
