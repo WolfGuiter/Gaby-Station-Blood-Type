@@ -1,6 +1,6 @@
 - type: entity
-  name: FireNet Network Console
-  description: A console capable of configuring and monitoring the Station's FireNet Servers.
+  name: FireNet Console
+  description: A console capable of configuring and monitoring the Station's Firefly Network Servers.
   parent: BaseComputerAiAccess
   id: ComputerFireNet
   components:
@@ -12,6 +12,7 @@
   - type: DeviceNetworkRequiresPower
   - type: Sprite
     sprite: _Dumont/Objects/Specific/Enginnering/FireNet/firenet_console.rsi
+    directional: true
     layers:
     - map: ["computerLayerBody"]
       state: computer
@@ -23,6 +24,8 @@
       state: firenet_console_keys
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
+  ##- type: ActivatableUI
+  ##  key: enum.FireNetUiKey.Key
   - type: GenericVisualizer
     visuals:
       enum.ComputerVisuals.Powered:
@@ -40,6 +43,8 @@
     interfaces:
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
+  ##    enum.FireNetUiKey.Key:
+  ##      type: FireNetConsoleUi
   - type: Computer
     board: FireNetConsoleCircuitboard
   - type: AccessReader

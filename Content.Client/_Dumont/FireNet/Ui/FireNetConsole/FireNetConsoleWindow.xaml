@@ -1,0 +1,17 @@
+<controls:FancyWindow xmlns="https://spacestation14.io"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                      xmlns:ui="clr-namespace:Content.Client._Dumont.FireNet.Ui.FireNetConsole"
+                      Title="Firefly Network Console"
+                      MinSize="980 620"
+                      Resizable="True"
+                      >
+    <PanelContainer PanelOverride="{x:Static ui:FireNetConsoleTheme.Background}">
+        <GridContainer Columns="2" Rows="2" Margin="5">
+            <BoxContainer Orientation="Horizontal" SeparationOverride="2" GridColumn="0" GridRow="0" PanelOverride="{x:Static ui:FireNetConsoleTheme.NavBar}">
+                <Button Name="NetConnButton" Text="Network Connections" HorizontalExpand="True" ModulateSelfOverride="{x:Static ui:FireNetConsoleTheme.Button}" />
+                <Button Name="ScriptingPanelButton" Text="FireNet Scripting" HorizontalExpand="True" ModulateSelfOverride="{x:Static ui:FireNetConsoleTheme.Button}" />
+            </BoxContainer>
+        </GridContainer>
+    </PanelContainer>
+</controls:FancyWindow>
